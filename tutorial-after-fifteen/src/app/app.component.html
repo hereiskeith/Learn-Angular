@@ -1,0 +1,6 @@
+<div>
+  <h1>
+    {{message}}
+  </h1>
+  <app-component-integration (childEvent)="message=$event" [parentData]="name"></app-component-integration>
+</div>
