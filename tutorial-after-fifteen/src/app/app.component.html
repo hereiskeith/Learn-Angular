@@ -1,9 +1,22 @@
+<!--<div>-->
+<!--  <h1>-->
+<!--    {{message}}-->
+<!--  </h1>-->
+<!--&lt;!&ndash;  <app-component-integration (childEvent)="message=$event" [parentData]="name"></app-component-integration>&ndash;&gt;-->
+<!--&lt;!&ndash;  <app-pipes></app-pipes>&ndash;&gt;-->
+<!--  <app-employee-list></app-employee-list>-->
+<!--  <app-employee-detail></app-employee-detail>-->
+<!--</div>-->
+
+
 <div>
   <h1>
-    {{message}}
+    Routing and Navigation
   </h1>
-<!--  <app-component-integration (childEvent)="message=$event" [parentData]="name"></app-component-integration>-->
-<!--  <app-pipes></app-pipes>-->
-  <app-employee-list></app-employee-list>
-  <app-employee-detail></app-employee-detail>
+  <nav>
+    <a routerLink="/employees" routerLinkActive="active">Employees</a>
+    <a routerLink="/departments" routerLinkActive="active">Departments</a>
+  </nav>
 </div>
+
+<router-outlet></router-outlet>

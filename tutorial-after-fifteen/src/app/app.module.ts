@@ -7,8 +7,8 @@ import { ComponentIntegrationComponent } from './component-integration/component
 import { PipesComponent } from './pipes/pipes.component';
 import { EmployeeService } from "./employee.service";
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { HttpClientModule } from "@angular/common/http";
+import { routingComponents } from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -16,14 +16,14 @@ import { HttpClientModule } from "@angular/common/http";
     ComponentIntegrationComponent,
     PipesComponent,
     EmployeeDetailComponent,
-    EmployeeListComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
